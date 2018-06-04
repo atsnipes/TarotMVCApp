@@ -1,6 +1,15 @@
 ﻿body {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     padding-bottom: 20px;
+    min-width:300px;        /* Suppose you want minimum width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
+    width:300px;            /* As IE6 ignores !important it will set width as 1000px; */
+}
+
+.background-img {
+    background: url("/images/tarotlogo.svg");
+    background-size: contain;
+    display: inline-block;
 }
 
 /* Wrapping element */
